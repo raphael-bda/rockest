@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>ROCKEST — O Portal do Rock em Português</title>
+  <meta name="description" content="Curadoria brutal. Playlists sem filtro. A maior enciclopédia viva do rock em português. Playlists no Spotify, Wiki, Quiz, Ranking e Linha do Tempo." />
+  <meta name="keywords" content="rock, playlists, grunge, heavy metal, punk, classic rock, wiki, quiz, ranking" />
+  <meta name="author" content="ROCKEST" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ROCKEST — O Portal do Rock" />
+  <meta property="og:description" content="Curadoria brutal. Playlists sem filtro. A maior enciclopédia viva do rock em português." />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ROCKEST — O Portal do Rock" />
+  <meta name="twitter:description" content="Curadoria brutal. Playlists sem filtro." />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://rockest.com.br/" />
+
+  <!-- Fonts: preconnect first, then load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ROCKEST",
+    "description": "O portal definitivo do rock em português",
+    "url": "https://rockest.com.br",
+    "inLanguage": "pt-BR"
+  }
+  </script>
+</head>
+<body>
+  <!-- Custom cursor -->
+  <div id="cur" aria-hidden="true"></div>
+  <div id="cur2" aria-hidden="true"></div>
+
+  <!-- Skip to content (accessibility) -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+
+  <!-- Navigation -->
+  <nav id="mainNav" role="navigation" aria-label="Navegação principal">
+    <a class="nav-logo" href="/" aria-label="ROCKEST — Página inicial">ROCK<em>EST</em></a>
+
+    <ul class="nav-menu" id="navMenu" role="menubar">
+      <li role="none"><a href="/" role="menuitem" class="active" data-page="home">Home</a></li>
+      <li role="none"><a href="/playlists" role="menuitem" data-page="playlists">Playlists</a></li>
+      <li role="none"><a href="/wiki" role="menuitem" data-page="wiki">Wiki</a></li>
+      <li role="none"><a href="/ranking" role="menuitem" data-page="ranking">Ranking</a></li>
+      <li role="none"><a href="/timeline" role="menuitem" data-page="timeline">Linha do Tempo</a></li>
+      <li role="none"><a href="/quiz" role="menuitem" data-page="quiz">Quiz</a></li>
+      <li role="none"><a href="/about" role="menuitem" data-page="about">Sobre</a></li>
+    </ul>
+
+    <a
+      href="https://open.spotify.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="nav-spotify"
+      aria-label="Abrir Spotify em nova aba"
+    >🎵 Spotify</a>
+
+    <button
+      class="nav-hamburger"
+      id="navHamburger"
+      aria-label="Abrir menu de navegação"
+      aria-expanded="false"
+      aria-controls="navMenu"
+    >
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Page container — pages are injected here by the router -->
+  <main id="main-content" role="main">
+    <div id="app"></div>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
