@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a ROCKEST. Dúvidas, sugestões e parcerias.">
+  <title>Contato — ROCKEST</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <div class="page-wrapper">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Início</a>
+        <span class="sep">›</span>
+        <span class="current">Contato</span>
+      </nav>
+      <p class="section-subtitle">Fale conosco</p>
+      <h1 class="section-title">Contato</h1>
+      <div class="title-rule mb-3"></div>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h2>Bora conversar.</h2>
+          <p>Dúvidas sobre produto, sugestão para o catálogo, parceria ou colaboração? Fala com a gente — respondemos com atenção.</p>
+          <div class="shopee-trust">
+            <span class="trust-icon">🛡️</span>
+            <span><strong>Dúvidas sobre pedidos?</strong> Todas as compras são na Shopee. Para suporte sobre pedidos, pagamentos ou entregas, acesse o SAC da Shopee.</span>
+          </div>
+          <div class="contact-socials">
+            <!-- SUBSTITUA pelo link real do seu Instagram -->
+            <a href="https://instagram.com/rockest.fm" target="_blank" rel="noopener" class="social-item">
+              <span class="social-icon">📸</span>
+              @rockest.fm
+            </a>
+            <!-- SUBSTITUA pelo seu e-mail real -->
+            <a href="mailto:contato@rockest.com.br" class="social-item">
+              <span class="social-icon">✉️</span>
+              contato@rockest.com.br
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="nome">Seu Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="">Selecione o assunto...</option>
+                <option value="produto">Dúvida sobre produto</option>
+                <option value="parceria">Parceria / Colaboração</option>
+                <option value="sugestao">Sugestão para o catálogo</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Enviar Mensagem</button>
+          </form>
+          <div id="form-success" class="hidden" style="text-align:center;padding:2rem 0">
+            <p style="font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);letter-spacing:0.1em">Mensagem Enviada!</p>
+            <p style="color:var(--white-dim);margin-top:0.5rem;font-size:0.9rem">Entraremos em contato em breve. Obrigado por falar com a ROCKEST. 🤘</p>
+          </div>
+          <p style="margin-top:1.2rem;font-size:0.73rem;color:rgba(160,154,142,0.45);letter-spacing:0.07em">
+            ⚠️ Para ativar o envio real, conecte ao Formspree, Netlify Forms ou serviço similar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../js/products.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('form-success').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
