@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ROCKEST — Vitrine de produtos rock. Camisetas, acessórios e mais. Compras seguras pela Shopee.">
-  <title>ROCKEST — Loja Oficial</title>
+  <meta name="description" content="ROCKEST — Curadoria de rock com quizzes, cursos e conteúdo exclusivo para quem vive o rock.">
+  <title>ROCKEST — Sua Curadoria de Rock</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,52 +19,72 @@
     <section class="hero-banner" aria-label="Banner principal">
       <div class="hero-lines"></div>
       <div class="hero-content">
-        <p class="hero-eyebrow">A loja do seu estilo de vida</p>
+        <p class="hero-eyebrow">Sua experiência musical começa aqui</p>
         <h1 class="hero-title">
-          VIVA O
-          <span>ROCK</span>
+          SUA CURADORIA
+          <span>DE ROCK</span>
         </h1>
-        <p class="hero-tagline">Atitude, estilo e autenticidade em cada peça</p>
+        <p class="hero-tagline">Descubra, aprenda e toque. Conteúdo, quizzes e cursos para quem vive o rock.</p>
         <div class="hero-actions">
-          <a href="pages/catalogo.html" class="btn btn-primary">Ver Catálogo</a>
-          <a href="pages/sobre.html" class="btn btn-outline">Nossa História</a>
+          <a href="#curadoria" class="btn btn-primary">Explorar Curadoria</a>
+          <a href="#cursos" class="btn btn-outline">Ver Cursos</a>
         </div>
-      </div>
     </section>
 
     <!-- MARQUEE -->
     <div class="marquee-wrap" aria-hidden="true">
       <div class="marquee-track">
         <span>Rock &amp; Roll</span><span class="sep">◆</span>
-        <span>Estilo Autêntico</span><span class="sep">◆</span>
-        <span>Edições Limitadas</span><span class="sep">◆</span>
+        <span>Curadoria Semanal</span><span class="sep">◆</span>
+        <span>Aprenda a Tocar</span><span class="sep">◆</span>
         <span>ROCKEST</span><span class="sep">◆</span>
-        <span>Viva o Rock</span><span class="sep">◆</span>
-        <span>Atitude</span><span class="sep">◆</span>
+        <span>Quizzes de Rock</span><span class="sep">◆</span>
+        <span>Cursos Incríveis</span><span class="sep">◆</span>
         <span>Rock &amp; Roll</span><span class="sep">◆</span>
-        <span>Estilo Autêntico</span><span class="sep">◆</span>
-        <span>Edições Limitadas</span><span class="sep">◆</span>
+        <span>Curadoria Semanal</span><span class="sep">◆</span>
+        <span>Aprenda a Tocar</span><span class="sep">◆</span>
         <span>ROCKEST</span><span class="sep">◆</span>
-        <span>Viva o Rock</span><span class="sep">◆</span>
-        <span>Atitude</span><span class="sep">◆</span>
+        <span>Quizzes de Rock</span><span class="sep">◆</span>
+        <span>Cursos Incríveis</span><span class="sep">◆</span>
       </div>
-    </div>
 
-    <!-- FEATURED PRODUCTS -->
-    <section class="page-wrapper" style="padding-bottom:0">
+    <!-- CURADORIA DA SEMANA -->
+    <section class="page-wrapper curatoria-section" id="curadoria">
       <p class="section-subtitle">Seleção da semana</p>
-      <h2 class="section-title">Produtos em Destaque</h2>
+      <h2 class="section-title">Curadoria ROCKEST</h2>
       <div class="title-rule"></div>
-
-      <div class="shopee-trust mt-2">
-        <span class="trust-icon">🛡️</span>
-        <span><strong>Para sua segurança, todas as compras são feitas diretamente pela Shopee.</strong> Ao clicar em "Comprar", você será redirecionado ao site oficial.</span>
+      <div class="curatoria-grid" id="curadoria-grid"></div>
+      <div class="curatoria-riff">
+        <strong>🎸 Riff do Dia:</strong> Você sabia que o riff de "Smoke on the Water" do Deep Purple foi criado por acidente? Ritchie Blackmore estava testando um novo pedal e acabou criando um dos riffs mais famosos da história!
       </div>
+    </section>
 
-      <div class="product-grid mt-2" id="featured-grid"></div>
+    <!-- QUIZZES -->
+    <section class="page-wrapper" id="quizzes">
+      <p class="section-subtitle">Teste seus conhecimentos</p>
+      <h2 class="section-title">Quizzes de Rock</h2>
+      <div class="title-rule"></div>
+      <p style="text-align:center;color:var(--white-dim);font-size:0.88rem;font-weight:300;margin-top:0.8rem;">
+        Descubra seu nível de conhecimento ou qual instrumento combina com você!
+      </p>
+      <div class="quiz-grid" id="quiz-grid"></div>
+    </section>
 
+    <!-- CURSOS HOTMART -->
+    <section class="page-wrapper" id="cursos">
+      <p class="section-subtitle">Aprenda a tocar</p>
+      <h2 class="section-title">Cursos Recomendados</h2>
+      <div class="title-rule"></div>
+      <p style="text-align:center;color:var(--white-dim);font-size:0.88rem;font-weight:300;margin-top:0.8rem;margin-bottom:0.5rem;">
+        Cursos selecionados para você aprender seu instrumento favorito
+      </p>
+      <div class="shopee-trust mt-2 mb-2">
+        <span class="trust-icon">🎯</span>
+        <span><strong>Links de afiliado:</strong> Ao comprar através dos nossos links, você apoia a ROCKEST. O preço é o mesmo para você!</span>
+      </div>
+      <div class="cursos-grid" id="cursos-grid"></div>
       <div class="text-center mt-3">
-        <a href="pages/catalogo.html" class="btn btn-outline">Ver Todo o Catálogo →</a>
+        <a href="pages/cursos.html" class="btn btn-outline">Ver Todos os Cursos →</a>
       </div>
     </section>
 
@@ -74,17 +94,16 @@
         <a href="https://instagram.com/rockest.fm" target="_blank" rel="noopener" class="ig-handle" aria-label="Instagram ROCKEST">
           <span>@rockest.fm</span>
         </a>
-        <p>Siga a ROCKEST no Instagram para novidades, lançamentos e conteúdo exclusivo</p>
+        <p>Siga a ROCKEST no Instagram para novidades, quizzes e conteúdo exclusivo</p>
         <a href="https://instagram.com/rockest.fm" target="_blank" rel="noopener" class="ig-link">
           Seguir no Instagram →
         </a>
       </div>
-    </div>
 
     <!-- MANIFESTO -->
     <div class="manifesto-strip">
       <blockquote>
-        "A ROCKEST não é só uma loja. É uma declaração de identidade para quem ouve alto, veste com atitude e não pede licença para existir."
+        "A ROCKEST não é só uma vitrine. É uma curadoria de identidade para quem ouve alto, toca com paixão e não pede licença para existir."
       </blockquote>
       <cite>— ROCKEST</cite>
     </div>
@@ -94,6 +113,8 @@
   <div id="site-footer"></div>
 
   <script src="js/products.js"></script>
+  <script src="js/cursos.js"></script>
+  <script src="js/quiz.js"></script>
   <script src="js/layout.js"></script>
   <script src="js/main.js"></script>
   <script src="js/home.js"></script>

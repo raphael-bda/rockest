@@ -21,6 +21,8 @@ function injectLayout() {
       <div class="nav-inner">
         <a href="${root}index.html">Início</a>
         <a href="${root}pages/catalogo.html">Catálogo</a>
+        <a href="${root}pages/cursos.html">Cursos</a>
+        <a href="${root}pages/quiz-page.html">Quiz</a>
         <a href="${root}pages/sobre.html">Sobre</a>
         <a href="${root}pages/contato.html">Contato</a>
       </div>
@@ -32,6 +34,8 @@ function injectLayout() {
       <button class="mobile-nav-close" aria-label="Fechar menu">✕</button>
       <a href="${root}index.html">Início</a>
       <a href="${root}pages/catalogo.html">Catálogo</a>
+      <a href="${root}pages/cursos.html">Cursos</a>
+      <a href="${root}pages/quiz-page.html">Quiz</a>
       <a href="${root}pages/sobre.html">Sobre</a>
       <a href="${root}pages/contato.html">Contato</a>
     </div>
@@ -57,6 +61,8 @@ function injectLayout() {
             <ul>
               <li><a href="${root}index.html">Início</a></li>
               <li><a href="${root}pages/catalogo.html">Catálogo</a></li>
+              <li><a href="${root}pages/cursos.html">Cursos</a></li>
+              <li><a href="${root}pages/quiz-page.html">Quiz</a></li>
               <li><a href="${root}pages/sobre.html">Sobre a ROCKEST</a></li>
               <li><a href="${root}pages/contato.html">Contato</a></li>
             </ul>

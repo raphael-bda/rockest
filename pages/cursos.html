@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cursos de música recomendados pela ROCKEST. Aprenda violão, bateria, vocal, piano e guitarra com os melhores cursos hotmart.">
+  <title>Cursos — ROCKEST</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <div class="page-wrapper">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Início</a>
+        <span class="sep">›</span>
+        <span class="current">Cursos</span>
+      </nav>
+      <p class="section-subtitle">Aprenda a tocar</p>
+      <h1 class="section-title">Cursos Recomendados</h1>
+      <div class="title-rule"></div>
+      <p style="text-align:center;color:var(--white-dim);font-size:0.88rem;font-weight:300;margin-top:0.8rem;margin-bottom:0.5rem;">
+        Selecionamos os melhores cursos para você aprender seu instrumento favorito. Violão, bateria, vocal, piano e guitarra — escolha o seu!
+      </p>
+      <div class="shopee-trust mt-2 mb-2">
+        <span class="trust-icon">🎯</span>
+        <span><strong>Links de afiliado:</strong> Ao comprar através dos nossos links, você apoia a ROCKEST. O preço é o mesmo para você!</span>
+      </div>
+
+      <!-- Filosofia -->
+      <div style="background:var(--dark-2);border:1px solid rgba(201,168,76,0.1);padding:1.8rem;margin:2rem 0;border-left:3px solid var(--gold);">
+        <p style="font-size:0.9rem;color:var(--white-dim);font-weight:300;line-height:1.8;margin-bottom:0.8rem;">
+          <strong style="color:var(--gold);font-family:var(--font-heading);letter-spacing:0.12em;">🎸 POR QUE APRENDER?</strong>
+        </p>
+        <p style="font-size:0.88rem;color:var(--white-dim);font-weight:300;line-height:1.7;">
+          "A música sempre esteve ao meu redor, mas eu nunca imaginei que conseguiria tocar. Comprei o curso de violão e em 3 meses já estava tocando minhas músicas favoritas. Mudou minha vida." — <strong style="color:var(--white);">Rafael S.</strong>
+        </p>
+        <p style="font-size:0.88rem;color:var(--white-dim);font-weight:300;line-height:1.7;margin-top:1rem;">
+          "Sempre tive vergonha de cantar, mesmo amando rock. O curso de vocal me deu técnica e confiança. Hoje canto no chuveiro... e no palco!" — <strong style="color:var(--white);">Ana C.</strong>
+        </p>
+      </div>
+
+      <div class="cursos-grid" id="cursos-grid"></div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../js/cursos.js"></script>
+  <script src="../js/quiz.js"></script>
+  <script src="../js/layout.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('cursos-grid');
+      if (grid) {
+        grid.innerHTML = CURSOS.map(c => renderCursoCard(c, '../')).join('');
+      }
+    });
+  </script>
+</body>
+</html>
